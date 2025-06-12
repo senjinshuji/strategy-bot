@@ -1,0 +1,12 @@
+node_modules
+.next
+*.log
+.DS_Store
+.env.local
+test-*.js
+*.json
+!package.json
+!tsconfig.json
+!vercel.json
+preview*.html
+static-preview.html

@@ -2,9 +2,10 @@
 
 import { useState } from 'react';
 import { MarketingAnalysis } from '../types';
+import UrlAnalyzer from '../components/UrlAnalyzer';
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState<string>('product');
+  const [activeTab, setActiveTab] = useState<string>('url');
   const [formData, setFormData] = useState<Partial<MarketingAnalysis>>({
     product: {
       productInfo: {
@@ -91,6 +92,7 @@ export default function Home() {
   });
 
   const tabs = [
+    { id: 'url', label: 'URL分析', icon: '🚀' },
     { id: 'product', label: '商品', icon: '📦' },
     { id: 'market', label: '市場', icon: '📊' },
     { id: 'n1', label: 'N1', icon: '👤' },
@@ -208,8 +210,15 @@ export default function Home() {
           ))}
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
-          {/* 商品タブ */}
+        {/* URL分析タブ */}
+        {activeTab === 'url' && (
+          <UrlAnalyzer />
+        )}
+
+        {/* 手動入力フォーム */}
+        {activeTab !== 'url' && (
+          <form onSubmit={handleSubmit} className="space-y-6">
+            {/* 商品タブ */}
           {activeTab === 'product' && (
             <div className="space-y-6">
               {/* 製品情報セクション */}
@@ -1124,7 +1133,8 @@ export default function Home() {
               </div>
             </div>
           )}
-        </form>
+          </form>
+        )}
       </div>
     </div>
   );

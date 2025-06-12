@@ -1,0 +1,371 @@
+{
+  "title": "つくりおき.jp | 手作りお惣菜の宅配サービス",
+  "description": "シェフの作り置きを冷蔵でお届け。そのまま食卓に並べて、夕食作りが5分で完了！管理栄養士監修のつくりおき惣菜を毎週お届けする食事宅配サービスです。つくりおき.jpは、できたてのおかずをご自宅に配達するので、安心安全・美味しいお料理を簡単にご家族で楽しめます。1人前、798円から。※5食プランの場合\n",
+  "url": "https://www.tsukurioki.jp/",
+  "productName": "つくりおき.jp | 手作りお惣菜の宅配サービス",
+  "category": "冷凍",
+  "pricing": {
+    "plans": [
+      {
+        "name": "※写真は週１度に届く量です（例：週５食プラン）※配達日の当日調理（一部配送枠除く）",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "※写真は週１度に届く量です（例：週５食プラン）※配達日の当日調理（一部配送枠除く）",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "気軽にスタートプラン",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "気軽にスタートプラン",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "気軽にスタートプラン",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t (4人前×3食)\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t  \n\t\t\t\t\t\t  \n\t\t\t\t\t\t    9,990\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t    円/週\n\t\t\t\t\t\t\t\t(税・送料込)",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t (4人前×3食)\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t  \n\t\t\t\t\t\t  \n\t\t\t\t\t\t    9,990\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t    円/週\n\t\t\t\t\t\t\t\t(税・送料込)",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t (4人前×3食)",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "大満足ボリュームプラン",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "大満足ボリュームプラン",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "大満足ボリュームプラン",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t (4人前×5食)\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t  \n\t\t\t\t\t\t  \n\t\t\t\t\t\t    15,960\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t    円/週\n\t\t\t\t\t\t\t\t(税・送料込)",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t (4人前×5食)\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t  \n\t\t\t\t\t\t  \n\t\t\t\t\t\t    15,960\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t    円/週\n\t\t\t\t\t\t\t\t(税・送料込)",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t (4人前×5食)",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "※４人前の内訳は、大人２名子供２名です。ボリュームイメージは上記画像をご覧下さい。\n※パック数は週ごとに異なります。\n※メニューによっては冷凍も可能です。\n※5食プランを4人家族で召し上がる場合、15,960円÷4人÷5食=798円",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "※４人前の内訳は、大人２名子供２名です。ボリュームイメージは上記画像をご覧下さい。\n※パック数は週ごとに異なります。\n※メニューによっては冷凍も可能です。\n※5食プランを4人家族で召し上がる場合、15,960円÷4人÷5食=798円",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "※5食プランを4人家族で召し上がる場合、15,960円÷4人÷5食=798円",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "気軽にスタートプランの場合",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "気軽にスタートプランの場合",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "(\n\t\t\t\t週3食プラン\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t4人前×3食\n\t\t\t)",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週3食プラン",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "大満足ボリュームプランの場合",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "大満足ボリュームプランの場合",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "(\n\t\t\t\t週5食プラン\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t4人前×5食\n\t\t\t)",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "週5食プラン",
+        "price": "5",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "の\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t3食プラン(9,990円)は",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "3食プラン(9,990円)は",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "3食プラン(9,990円)は",
+        "price": "3",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "2\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tLINEで注文\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t注文プラン、支払い方法、配達時間帯を入力。",
+        "price": "2",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "2\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tLINEで注文\n\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t注文プラン、支払い方法、配達時間帯を入力。",
+        "price": "2",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "注文プラン、支払い方法、配達時間帯を入力。",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      },
+      {
+        "name": "注文プラン、支払い方法、配達時間帯を入力。",
+        "price": "",
+        "period": "",
+        "features": [],
+        "isRecommended": false
+      }
+    ],
+    "mainPrice": "",
+    "specialOffers": []
+  },
+  "features": [],
+  "benefits": [],
+  "specifications": [],
+  "targetAudience": [
+    "家族"
+  ],
+  "demographics": {
+    "age": "",
+    "gender": "男女",
+    "lifestyle": "",
+    "interests": [
+      "料理",
+      "家族"
+    ]
+  },
+  "testimonials": [],
+  "socialProof": {
+    "customerCount": "4人",
+    "companyLogos": [
+      "https://www.tsukurioki.jp/hs-fs/hubfs/logo_vertical_tagline_color_A.png?width=1000&height=781&name=logo_vertical_tagline_color_A.png",
+      "https://www.tsukurioki.jp/hs-fs/hubfs/logo-1.png?width=394&height=103&name=logo-1.png",
+      "https://www.tsukurioki.jp/hs-fs/hubfs/logo-1.png?width=394&height=103&name=logo-1.png",
+      "https://www.tsukurioki.jp/hs-fs/hubfs/footer-logo.png?width=618&height=192&name=footer-logo.png"
+    ],
+    "ratings": [],
+    "reviews": []
+  },
+  "contact": {
+    "phone": "16950087441",
+    "email": "",
+    "address": "",
+    "businessHours": "",
+    "socialMedia": [
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/tsukurioki.jp/"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/tsukurioki.jp/"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/tsukurioki.jp/"
+      }
+    ]
+  },
+  "keyMessages": [],
+  "valuePropositions": [],
+  "callToActions": [
+    "Previous",
+    "Next"
+  ],
+  "images": [
+    "https://www.tsukurioki.jp/hs-fs/hubfs/logo_vertical_tagline_color_A.png?width=1000&height=781&name=logo_vertical_tagline_color_A.png",
+    "https://www.tsukurioki.jp/hs-fs/hubfs/logo-1.png?width=394&height=103&name=logo-1.png",
+    "https://www.tsukurioki.jp/hs-fs/hubfs/%E3%83%97%E3%83%AD%E3%81%AE%E6%89%8B%E4%BD%9C%E3%82%8A-1.png?width=295&height=96&name=%E3%83%97%E3%83%AD%E3%81%AE%E6%89%8B%E4%BD%9C%E3%82%8A-1.png",
+    "https://www.tsukurioki.jp/hs-fs/hubfs/%E6%A0%84%E9%A4%8A%E5%A3%AB%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94.png?width=332&height=99&name=%E6%A0%84%E9%A4%8A%E5%A3%AB%E3%81%AE%E3%83%AC%E3%82%B7%E3%83%94.png",
+    "https://www.tsukurioki.jp/hs-fs/hubfs/%E9%80%B1%E6%9B%BF%E3%82%8A%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC.png?width=368&height=100&name=%E9%80%B1%E6%9B%BF%E3%82%8A%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC.png",
+    "https://www.tsukurioki.jp/hs-fs/hubfs/bag2.png?width=250&height=246&name=bag2.png",
+    "https://www.tsukurioki.jp/hs-fs/hubfs/dekitate2.png?width=940&height=341&name=dekitate2.png",
+    "https://www.tsukurioki.jp/hs-fs/hubfs/before-after3.png?width=1000&height=346&name=before-after3.png",
+    "https://www.tsukurioki.jp/hubfs/story-sankei-shinbun.png",
+    "https://www.tsukurioki.jp/hubfs/%E7%B4%AF%E8%A8%88%E6%8F%90%E4%BE%9B%E9%A3%9F%E6%95%B0/2000m.png"
+  ],
+  "videos": [],
+  "downloadableContent": [],
+  "metadata": {
+    "scrapedAt": "2025-06-12T01:33:29.993Z",
+    "pageLoadTime": 4669,
+    "contentLength": 33973,
+    "language": "ja-jp",
+    "pageType": "product",
+    "mobileOptimized": true,
+    "hasVideo": false,
+    "hasTestimonials": false,
+    "hasPricing": true
+  }
+}

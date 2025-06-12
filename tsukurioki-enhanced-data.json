@@ -1,0 +1,124 @@
+{
+  "title": "つくりおき.jp | 手作りお惣菜の宅配サービス",
+  "description": "シェフの作り置きを冷蔵でお届け。そのまま食卓に並べて、夕食作りが5分で完了！管理栄養士監修のつくりおき惣菜を毎週お届けする食事宅配サービスです。つくりおき.jpは、できたてのおかずをご自宅に配達するので、安心安全・美味しいお料理を簡単にご家族で楽しめます。1人前、798円から。※5食プランの場合\n",
+  "url": "https://www.tsukurioki.jp/",
+  "productInfo": {
+    "productName": "つくりおき.jp",
+    "category": "宅配食",
+    "sizeCapacity": "3食",
+    "functions": [
+      "管理栄養士監修",
+      "当日調理"
+    ],
+    "effects": [],
+    "rtb": "管理栄養士監修",
+    "authority": "プロの手作り",
+    "regularPrice": "9,990\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t    円/週",
+    "specialPrice": "初回割引あり",
+    "campaign": "",
+    "releaseDate": "",
+    "salesChannel": "オンライン宅配",
+    "demographics": {
+      "age": "",
+      "gender": "男女",
+      "other": "ファミリー"
+    }
+  },
+  "valueProposition": {
+    "functionalValue": [
+      "5分で食卓が完成",
+      "毎週お届け"
+    ],
+    "emotionalValue": []
+  },
+  "marketTarget": {
+    "marketDefinition": "料理のアウトソーシング市場",
+    "marketCategory": "宅配食/中食/家事代行",
+    "strategicTarget": "共働き夫婦",
+    "coreTarget": "時間に余裕のない子育て世帯",
+    "marketSize": "推定市場規模",
+    "purchasers": "推定利用者数",
+    "aov": "推定単価"
+  },
+  "n1Profile": {
+    "age": "30-40代",
+    "gender": "女性",
+    "location": "首都圏",
+    "occupation": "会社員",
+    "position": "一般職",
+    "industryCategory": "サービス業",
+    "income": "400-600万円",
+    "education": "大学卒",
+    "familyStructure": "夫婦+子ども2人",
+    "lifestyle": "共働きで忙しい日常",
+    "interests": [
+      "時短",
+      "健康",
+      "家族",
+      "料理"
+    ],
+    "mediaUsage": [
+      "Instagram",
+      "Web検索",
+      "スマートフォン"
+    ],
+    "dailyPurchases": [
+      "食品",
+      "日用品"
+    ],
+    "specialPurchases": [
+      "宅配サービス",
+      "時短商品"
+    ]
+  },
+  "competitors": {
+    "categoryCompetitors": [
+      "シェフボックス",
+      "ヨシケイ",
+      "コープデリ"
+    ],
+    "brandCompetitors": [
+      "やおやの食卓",
+      "わんまいる",
+      "ママの休食"
+    ],
+    "productCompetitors": [
+      "冷凍弁当",
+      "ミールキット",
+      "食材宅配"
+    ],
+    "differentiation": "当日調理の冷蔵お惣菜",
+    "usp": "5分で完成する家庭的な味",
+    "preference": "味の続けやすさと利便性"
+  },
+  "concept": {
+    "market": "料理のアウトソーシング市場",
+    "strategicTarget": "共働き夫婦",
+    "coreTarget": "時間に余裕のない子育て世帯",
+    "demand": "美味しくて安全な夕食を手軽に",
+    "benefit": "5分で完成する家庭的な味",
+    "features": [
+      "当日調理",
+      "冷蔵お届け",
+      "管理栄養士監修"
+    ],
+    "concept": "5分で完成！我が家のごちそう",
+    "rtb": "プロの手作りをレンジで温めるだけ",
+    "brandCharacter": "料理特化の第二のおふくろ"
+  },
+  "metadata": {
+    "scrapedAt": "2025-06-12T01:36:12.742Z",
+    "pageLoadTime": 30466,
+    "contentLength": 33973,
+    "confidence": 85,
+    "extractedSections": [
+      "basic_info",
+      "product_info",
+      "value_proposition",
+      "market_target",
+      "n1_profile",
+      "competitors",
+      "concept"
+    ]
+  }
+}

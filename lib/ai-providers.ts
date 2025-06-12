@@ -212,13 +212,186 @@ export class OllamaProvider implements AIProvider {
 
 // Claude版（有料）
 export class ClaudeProvider implements AIProvider {
-  name = 'Claude 3.5 Haiku';
-  cost = '約1.5円/回';
+  name = 'Claude 3.5 Sonnet';
+  cost = '約15円/回';
 
   async analyze(data: any): Promise<AnalysisResult> {
-    // 既存のClaude実装を使用
-    const { analyzeMarketingStrategy } = await import('./anthropic');
-    return await analyzeMarketingStrategy(data);
+    try {
+      const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+      if (!ANTHROPIC_API_KEY) {
+        throw new Error('ANTHROPIC_API_KEY not found');
+      }
+
+      const response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': ANTHROPIC_API_KEY,
+          'anthropic-version': '2023-06-01'
+        },
+        body: JSON.stringify({
+          model: 'claude-3-5-sonnet-20241022',
+          max_tokens: 4000,
+          messages: [{
+            role: 'user',
+            content: this.buildAnalysisPrompt(data)
+          }]
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Claude API error: ${response.status}`);
+      }
+
+      const result = await response.json();
+      const analysisText = result.content[0].text;
+
+      return {
+        success: true,
+        analysis: analysisText,
+        usage: {
+          inputTokens: result.usage?.input_tokens || 0,
+          outputTokens: result.usage?.output_tokens || 0,
+          cost: this.calculateCost(result.usage?.input_tokens || 0, result.usage?.output_tokens || 0)
+        }
+      };
+    } catch (error) {
+      return {
+        success: false,
+        analysis: '',
+        error: error instanceof Error ? error.message : 'Claude API error'
+      };
+    }
+  }
+
+  private buildAnalysisPrompt(data: any): string {
+    return `あなたは優秀なマーケティング戦略アナリストです。以下のLP情報から包括的な戦略分析を行ってください。
+
+LP情報:
+${JSON.stringify(data, null, 2)}
+
+以下の8つの観点で詳細に分析してください：
+
+1. 戦略的インサイト
+2. 推奨チャネル戦略
+3. メッセージング戦略
+4. クリエイティブディレクション
+5. 競合ポジショニング戦略
+6. KPI設定提案
+7. 実行優先度ロードマップ
+8. 既存ツール活用提案
+
+実践的で具体的な提案を日本語で回答してください。`;
+  }
+
+  private calculateCost(inputTokens: number, outputTokens: number): number {
+    // Claude 3.5 Sonnet pricing: $3/1M input, $15/1M output
+    return (inputTokens * 3 + outputTokens * 15) / 1000000 * 150; // USD to JPY conversion
+  }
+}
+
+// ChatGPT版（有料）
+export class ChatGPTProvider implements AIProvider {
+  name = 'ChatGPT 4o';
+  cost = '約8円/回';
+
+  async analyze(data: any): Promise<AnalysisResult> {
+    try {
+      const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+      if (!OPENAI_API_KEY) {
+        throw new Error('OPENAI_API_KEY not found');
+      }
+
+      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${OPENAI_API_KEY}`
+        },
+        body: JSON.stringify({
+          model: 'gpt-4o',
+          messages: [{
+            role: 'system',
+            content: 'あなたは優秀なマーケティング戦略アナリストです。LPの情報から包括的な戦略分析を行い、実践的で具体的な提案を日本語で回答してください。'
+          }, {
+            role: 'user',
+            content: this.buildAnalysisPrompt(data)
+          }],
+          max_tokens: 4000,
+          temperature: 0.3
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`OpenAI API error: ${response.status}`);
+      }
+
+      const result = await response.json();
+      const analysisText = result.choices[0].message.content;
+
+      return {
+        success: true,
+        analysis: analysisText,
+        usage: {
+          inputTokens: result.usage?.prompt_tokens || 0,
+          outputTokens: result.usage?.completion_tokens || 0,
+          cost: this.calculateCost(result.usage?.prompt_tokens || 0, result.usage?.completion_tokens || 0)
+        }
+      };
+    } catch (error) {
+      return {
+        success: false,
+        analysis: '',
+        error: error instanceof Error ? error.message : 'OpenAI API error'
+      };
+    }
+  }
+
+  private buildAnalysisPrompt(data: any): string {
+    return `以下のLP情報から包括的なマーケティング戦略分析を行ってください。
+
+LP情報:
+${JSON.stringify(data, null, 2)}
+
+以下の8つの観点で詳細に分析してください：
+
+1. 戦略的インサイト
+   - バリュープロポジション分析
+   - 成功要因仮説
+   - リスク分析と対策案
+
+2. 推奨チャネル戦略
+   - 推奨媒体ランキング（優先度・予算配分含む）
+   - 各媒体の選定理由
+
+3. メッセージング戦略
+   - プライマリメッセージ
+   - セカンダリメッセージ（機能価値・情緒価値・RTB）
+
+4. クリエイティブディレクション
+   - 推奨ビジュアル方向性
+   - コピー案（3パターン）
+
+5. 競合ポジショニング戦略
+   - 差別化ポイント
+   - 価格戦略
+
+6. KPI設定提案
+   - 認知段階・獲得段階・継続段階のKPI
+
+7. 実行優先度ロードマップ
+   - Phase 1-3の具体的施策
+
+8. 既存ツール活用提案
+   - 動画広告分析PRO活用法
+   - ad.com活用法
+
+実践的で具体的な提案をお願いします。`;
+  }
+
+  private calculateCost(inputTokens: number, outputTokens: number): number {
+    // GPT-4o pricing: $2.50/1M input, $10/1M output
+    return (inputTokens * 2.5 + outputTokens * 10) / 1000000 * 150; // USD to JPY conversion
   }
 }
 
@@ -231,7 +404,17 @@ export function getAIProvider(): AIProvider {
       return new OllamaProvider();
     case 'claude':
       return new ClaudeProvider();
+    case 'chatgpt':
+      return new ChatGPTProvider();
     default:
       return new MockProvider();
   }
 }
+
+// プロバイダーオブジェクト（後方互換性のため）
+export const aiProviders = {
+  mock: new MockProvider(),
+  ollama: new OllamaProvider(),
+  claude: new ClaudeProvider(),
+  chatgpt: new ChatGPTProvider()
+};

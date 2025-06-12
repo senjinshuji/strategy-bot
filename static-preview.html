@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戦略ボット - ChatGPT版</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen">
+        <div class="container mx-auto p-6 max-w-4xl">
+            <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">
+                🚀 戦略ボット - ChatGPT版
+            </h1>
+
+            <!-- ステータス表示 -->
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+                <h2 class="text-xl font-semibold text-green-800 mb-4">✅ システム状態</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-sm text-gray-600">AIプロバイダー</p>
+                        <p class="text-lg font-semibold text-gray-800">ChatGPT 4o</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600">APIキー状態</p>
+                        <p class="text-lg font-semibold text-green-600">設定済み ✓</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600">推定コスト</p>
+                        <p class="text-lg font-semibold text-gray-800">約8円/分析</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-600">処理速度</p>
+                        <p class="text-lg font-semibold text-gray-800">高速</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- URL分析フォーム -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">
+                    🔍 URL自動分析
+                </h2>
+                
+                <div class="mb-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">
+                        製品・サービスのURL
+                    </label>
+                    <div class="flex gap-3">
+                        <input 
+                            type="url" 
+                            value="https://www.tsukurioki.jp"
+                            class="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="https://example.com"
+                        />
+                        <button class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                            分析開始
+                        </button>
+                    </div>
+                </div>
+
+                <!-- サンプル結果 -->
+                <div class="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-md">
+                    <h3 class="font-semibold text-blue-800 mb-2">📊 分析結果サンプル</h3>
+                    <p class="text-sm text-blue-700">
+                        URL: https://www.tsukurioki.jp<br>
+                        商品名: つくりおき.jp<br>
+                        カテゴリー: 宅配食<br>
+                        価格: 9,990円/週<br>
+                        信頼度: 85%<br>
+                        処理時間: 約32秒
+                    </p>
+                </div>
+            </div>
+
+            <!-- 機能一覧 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">🎯 主要機能</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-gray-50 rounded-md">
+                        <h3 class="font-semibold text-gray-800 mb-2">📋 自動データ抽出</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• 商品情報の自動取得</li>
+                            <li>• 価格・機能の分析</li>
+                            <li>• ターゲット層の推定</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-md">
+                        <h3 class="font-semibold text-gray-800 mb-2">🧠 AI戦略分析</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• 市場ポジショニング</li>
+                            <li>• 競合優位性の特定</li>
+                            <li>• マーケティング戦略提案</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-md">
+                        <h3 class="font-semibold text-gray-800 mb-2">💰 コスト効率</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• 約8円/分析の低コスト</li>
+                            <li>• 高速処理（3-10秒）</li>
+                            <li>• 月100回で約800円</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-md">
+                        <h3 class="font-semibold text-gray-800 mb-2">📊 詳細レポート</h3>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• 8セクション分析</li>
+                            <li>• CSV形式準拠</li>
+                            <li>• 改善提案付き</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- フッター -->
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>戦略ボット ChatGPT版 - 高速・低コストなマーケティング分析ツール</p>
+                <p class="mt-2">
+                    <a href="#" class="text-blue-600 hover:underline">ドキュメント</a> | 
+                    <a href="#" class="text-blue-600 hover:underline">設定ガイド</a> | 
+                    <a href="#" class="text-blue-600 hover:underline">APIキー管理</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 分析ボタンのクリックイベント
+        document.querySelector('button').addEventListener('click', function() {
+            alert('分析機能はサーバー起動後に利用可能です。\n\n実行コマンド:\nnpm run dev\n\nその後、http://localhost:3000 にアクセスしてください。');
+        });
+    </script>
+</body>
+</html>
